@@ -1,2 +1,2 @@
 # Vue-Trello-clone
-A Trello clone create with Vue.js
+A Trello clone created using Vue.js, HTML, CSS (Foundation). 
