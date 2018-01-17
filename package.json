@@ -1,0 +1,29 @@
+{
+  "name": "vue-trello-clone",
+  "version": "1.0.0",
+  "description": "A Trello clone created using Vue.js, HTML, and Foundation (CSS)",
+  "main": "script.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: no tests specified yet\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SnGrimes/Vue-Trello-clone.git"
+  },
+  "keywords": [
+    "Vue",
+    "Javascript",
+    "HTML",
+    "CSS"
+  ],
+  "author": "Shantia Grimes-Farmer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SnGrimes/Vue-Trello-clone/issues"
+  },
+  "homepage": "https://github.com/SnGrimes/Vue-Trello-clone#readme",
+  "devDependencies": {
+    "browser-sync": "^2.19.0",
+    "gulp": "^3.9.1"
+  }
+}
