@@ -11,9 +11,9 @@
     <body>
         <div class="grid-container fluid">
 
-            <div id="homeBar" class="grid-x grid-margin-x">
-                <div class="small-1 cell" id="boards"><span>Img</span><p>Boards</p></div>
-                <div class="small-2 cell"><input type="text" name="search" size="30" placeholder="Search"></div>
+            <div id="homeBar" class="homeBar grid-x grid-margin-x">
+                <div class="small-1 cell" id="boards"><p><span><img src="img/layers.svg" /></span>Boards</p></div>
+                <div class="small-2 cell"><input type="text" name="search" size="30" placeholder="Search" class="searchBar"></div>
                 <div class="small-4 cell">Logo</div>
                 <div class="small-1 cell"><button>Add User Icon<img src="" /></button></div>
                 <div class="small-1 shrink cell"><img src="" /></div>
@@ -22,8 +22,12 @@
                 <div class="small-1 shrink cell"><button>Settings Icon <img src="" /></button></div>
             </div>
             <div id="boardInfo">
-                <h1>Board Title</h1>
-                <h6><a href="">Show Menu</a></h6>
+                <div class="small-2 cell"><h1>Board Title</h1></div>
+                <div class="small-1 cell"><h5>Team Name</h5></div>
+                <div class="small-1 cell">Star Icon</div>
+                <div class="small-1 cell">Public/Private</div>
+                <div class="small-2 cell"><h6><a href="">Show Menu</a></h6></div>
+
             </div>
             <div id="boardBody"></div>
         </div>

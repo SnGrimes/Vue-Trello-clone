@@ -1,3 +1,16 @@
+html {
+    background: #61abc6;
+}
+.homeBar {
+    background: #0079bf;
+}
+body {
+    background: transparent;
+}
 div {
     border: 1px solid black;
+}
+
+.searchBar {
+    background-image: url("../img/search.svg") right center no-repeat;
 }
