@@ -9,25 +9,36 @@
         <meta charset="UTF-8" />
     </head>
     <body>
+        <noscript>To use Trello Clone, please enable Javascript.</noscript>
         <div class="grid-container fluid">
 
-            <div id="homeBar" class="homeBar grid-x grid-margin-x">
-                <div class="small-1 cell" id="boards"><p><span><img src="img/layers.svg" /></span>Boards</p></div>
-                <div class="small-2 cell"><input type="text" name="search" size="30" placeholder="Search" class="searchBar"></div>
-                <div class="small-4 cell">Logo</div>
-                <div class="small-1 cell"><button>Add User Icon<img src="" /></button></div>
-                <div class="small-1 shrink cell"><img src="" /></div>
-                <div class="small-1 shrink cell"><button>Info Icon<img src="" /></button></div>
-                <div class="small-1 shrink cell"><button>Alarm Icon? <img src="" /></button></div>
-                <div class="small-1 shrink cell"><button>Settings Icon <img src="" /></button></div>
+            <div id="homeBar" class="homeBar grid-x grid-padding-x">
+                <div class="top-bar-left">
+                    <ul class="menu horizontal">
+                        <li id="boards"><button class="button"><span><img src="img/layers.svg" /></span> Boards</button></li>
+                        <li><input type="text" name="search" size="30" class="searchBar"></li>
+                    </ul>
+                </div>
+                <div class="auto cell text-center"><h2 class="clone">Trello Clone</h2></div>
+                <div class="top-bar-right">
+                    <ul class="menu horizontal expanded">
+                        <li><button class="button"><img src="img/plus.svg" /></button></li>
+                        <li><button class="button"><img src="img/info.svg" /></button></li>
+                        <li><button class="button"><img src="img/bell.svg" /></button></li>
+                        <li><button class="button"><img src="img/user.svg" /></button></li>
+                    </ul>
+                </div>
             </div>
-            <div id="boardInfo">
-                <div class="small-2 cell"><h1>Board Title</h1></div>
-                <div class="small-1 cell"><h5>Team Name</h5></div>
-                <div class="small-1 cell">Star Icon</div>
-                <div class="small-1 cell">Public/Private</div>
-                <div class="small-2 cell"><h6><a href="">Show Menu</a></h6></div>
-
+            <div id="boardInfo" class="grid-x grid-padding-x">
+                <ul class="menu horizontal boardInfo large-10 cell">
+                    <li><a href="">Untitled board</a></li>
+                    <li><a href="#">Personal</a></li>
+                    <li><a href="#"><img src="img/star.svg" width="15"/></a></li>
+                    <li><a href="#"><img src="img/lock.svg" width="15" /> Private</a></li>
+                </ul>
+                <div class="large-2 cell menu">
+                    <span class="showMenu"><a href="#"><img src="img/more-horizontal.svg" /> Show Menu</a></span>
+                </div>
             </div>
             <div id="boardBody"></div>
         </div>

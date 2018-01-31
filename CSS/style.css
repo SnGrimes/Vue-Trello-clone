@@ -2,15 +2,59 @@ html {
     background: #61abc6;
 }
 .homeBar {
-    background: #0079bf;
-}
-body {
-    background: transparent;
-}
-div {
-    border: 1px solid black;
+    background: #026aa7;
+    padding: 5px 0 5px 0;
+    height: 45px;
 }
 
-.searchBar {
-    background-image: url("../img/search.svg") right center no-repeat;
+body {
+    background: transparent;
+    color: white;
 }
+/*div {
+    border: 1px solid black;
+}*/
+
+.searchBar {
+    display: inline-block;
+    border: none;
+    background-color: hsla(0,0%,100%,.3);
+    background-image: url('../img/search.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 30px;
+    height: 36px;
+}
+.clone {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+div.homeBar > div > ul > li > button.button, div.homeBar > div > ul > li > button.button  {
+    padding: 5px;
+    border-radius: 5px;
+    background: hsla(0,0%,100%,.3);
+}
+
+div.homeBar > div > ul > li > button.button:hover, div.homeBar > div > ul > li > button.button:hover {
+    background: #239ae0;
+} 
+
+.homeBar li {
+    padding: 0 5px 0 5px;
+}
+.showMenu {
+    padding-left: 60px;
+}
+.boardInfo {
+    margin-top: 10px;
+}
+
+a {
+    color: white;
+}
+.boardName {
+    font-size: 1.5em;
+}
+
+
