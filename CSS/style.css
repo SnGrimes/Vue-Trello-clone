@@ -57,4 +57,30 @@ a {
     font-size: 1.5em;
 }
 
+.new-list-button {
+    background-color: rgba(0,0,0,.30);
+    padding: 10px;
+    border-radius: 4px;
+    width: 300px;
+    margin: 0 10px 0 10px;
+    height: 50px;
+}
 
+.new-list-button:hover {
+    background-color: rgba(0,0,0,.50)
+}
+.list, .add-list {
+    background-color: #e2e4e6;
+    border: 1px solid #e2e4e6;
+    padding: 5px;
+    border-radius: 3px;
+    height: auto;
+    width: 300px;
+}
+.feather-x {
+    stroke:#999;
+    width: 100%;
+}
+.feather-x:hover {
+    stroke: black;
+}

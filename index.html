@@ -10,8 +10,8 @@
     </head>
     <body>
         <noscript>To use Trello Clone, please enable Javascript.</noscript>
-        <div class="grid-container fluid">
-
+        <div class="grid-container fluid" id="app">
+                
             <div id="homeBar" class="homeBar grid-x grid-padding-x">
                 <div class="top-bar-left">
                     <ul class="menu horizontal">
@@ -40,11 +40,28 @@
                     <span class="showMenu"><a href="#"><img src="img/more-horizontal.svg" /> Show Menu</a></span>
                 </div>
             </div>
-            <div id="boardBody"></div>
+            <div id="boardBody" class="grid-x grid-margin-x">
+                <list></list>
+                <div class="new-list-button is-idle"><a href="#">Add a list...</a></div>
+            </div>
         </div>
         <script src="JS/script.js" async></script>
         <script src="JS/vendor/what-input.js"></script>
         <script src="JS/vendor/foundation.js"></script>
         <script src="JS/vendor/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <!-- List component template -->
+        <script type="text/x-template" id="add-list-template">
+        <div class="add-list">
+            <form>
+                <input type="text" name="listName" size="30" placeholder="Add a list...">
+                <button class="success button">Save</button>
+                <button><object type="image/svg+xml" data="img/x.svg" class="cancel"></object></button>
+                <p>A list component</p>
+            </form>
+        </div>
+        </script>
+
+
     </body>
 </html>
