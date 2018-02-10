@@ -1,10 +1,10 @@
 'use strict'
 
+
+
 var Card = {
     template: '<div>A card component</div>'
 }
-
-Vue.component('newList')
 
 Vue.component('list', {
     template: '#add-list-template',
@@ -13,10 +13,20 @@ Vue.component('list', {
     }
 }) 
 
+
+
 var app = new Vue ({
     el: '#app',
-    data: {
-        message: 'Vue is working!'
+    data: function() {
+        return {
+            lists: []
+        }
     }
-})
+    ,
+    methods: {
+        newList: function (event) {
+            this.lists.push('list');
+        }
+    }
+});
 

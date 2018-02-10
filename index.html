@@ -41,15 +41,19 @@
                 </div>
             </div>
             <div id="boardBody" class="grid-x grid-margin-x">
-                <list></list>
-                <div class="new-list-button is-idle"><a href="#">Add a list...</a></div>
+                <ul class="grid-x grid-margin-x">
+                    <li v-for="list in lists" v-bind:is="list"></li>
+                </ul>
+                <div class="new-list-button is-idle"><a v-on:click="newList" href="#">Add a list...</a></div>
             </div>
         </div>
-        <script src="JS/script.js" async></script>
-        <script src="JS/vendor/what-input.js"></script>
-        <script src="JS/vendor/foundation.js"></script>
         <script src="JS/vendor/jquery.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="JS/vendor/what-input.js"></script>
+        <script src="JS/vendor/foundation.js"></script>
+        <script src="JS/script.js" async></script>
+        
+        
         <!-- List component template -->
         <script type="text/x-template" id="add-list-template">
         <div class="add-list">
